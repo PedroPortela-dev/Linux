@@ -16,10 +16,14 @@ public class OlaMundo {
             cord[i][1] = Input.nextFloat();
         }
 
-        centroY=((cord[1][0]-cord[2][0]-cord[1][1]*(cord[1][1]-cord[0][1])/(cord[0][0]-cord[1][0])-cord[2][1]*(cord[0][1]-cord[2][1]))/((cord[1][1]-cord[0][1])/(cord[0][0]-cord[1][0])+cord[0][1]-cord[2][1])-cord[0][1])/2;
-        centroX=((2*centroY+cord[0][1]+cord[1][1])*(cord[1][1]-cord[0][1])/(cord[0][0]-cord[1][0])-(cord[0][0]+cord[1][0]))/2;
-        raio=Math.sqrt(Math.pow(cord[0][0]-centroX,2)+Math.pow(cord[0][1]-centroY,2));
+        calculo p1p2 = new calculo(cord[0][0], cord[1][0], cord[0][1], cord [1][1]);
+        calculo p1p3 = new calculo(cord[0][0], cord[2][0], cord[0][1], cord [2][1]);
 
-        System.out.println("Cordenadas do centro ("+centroX+";"+centroY+") e raio: "+raio);
+        centroY=(p1p2.getCalculo()-p1p3.getCalculo())/(p1p2.getDerivada()-p1p3.getDerivada());
+        centroX=p1p2.getCalculo()-centroY*p1p2.getDerivada();
+        raio=Math.hypot(cord[0][0]-centroX, cord[0][1]-centroY);
+
+        System.out.println("Coordenadas do centro ("+centroX+";"+centroY+") e raio: "+raio);
+
     }
 }
