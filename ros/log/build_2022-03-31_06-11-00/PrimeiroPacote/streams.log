@@ -1,0 +1,33 @@
+[1.007s] Invoking command in '/home/pedroportela/Linux/ros/scr/PrimeiroPacote': PYTHONPATH=/home/pedroportela/Linux/ros/install/PrimeiroPacote/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/PrimeiroPacote build --build-base /home/pedroportela/Linux/ros/build/PrimeiroPacote/build install --prefix /home/pedroportela/Linux/ros/install/PrimeiroPacote --record /home/pedroportela/Linux/ros/build/PrimeiroPacote/install.log --single-version-externally-managed
+[1.197s] running egg_info
+[1.198s] creating ../../build/PrimeiroPacote/PrimeiroPacote.egg-info
+[1.198s] writing ../../build/PrimeiroPacote/PrimeiroPacote.egg-info/PKG-INFO
+[1.198s] writing dependency_links to ../../build/PrimeiroPacote/PrimeiroPacote.egg-info/dependency_links.txt
+[1.198s] writing entry points to ../../build/PrimeiroPacote/PrimeiroPacote.egg-info/entry_points.txt
+[1.199s] writing requirements to ../../build/PrimeiroPacote/PrimeiroPacote.egg-info/requires.txt
+[1.199s] writing top-level names to ../../build/PrimeiroPacote/PrimeiroPacote.egg-info/top_level.txt
+[1.200s] writing manifest file '../../build/PrimeiroPacote/PrimeiroPacote.egg-info/SOURCES.txt'
+[1.230s] reading manifest file '../../build/PrimeiroPacote/PrimeiroPacote.egg-info/SOURCES.txt'
+[1.231s] writing manifest file '../../build/PrimeiroPacote/PrimeiroPacote.egg-info/SOURCES.txt'
+[1.232s] running build
+[1.232s] running build_py
+[1.232s] creating /home/pedroportela/Linux/ros/build/PrimeiroPacote/build
+[1.232s] creating /home/pedroportela/Linux/ros/build/PrimeiroPacote/build/lib
+[1.233s] creating /home/pedroportela/Linux/ros/build/PrimeiroPacote/build/lib/PrimeiroPacote
+[1.233s] copying PrimeiroPacote/__init__.py -> /home/pedroportela/Linux/ros/build/PrimeiroPacote/build/lib/PrimeiroPacote
+[1.233s] running install
+[1.233s] running install_lib
+[1.234s] creating /home/pedroportela/Linux/ros/install/PrimeiroPacote/lib/python3.8/site-packages/PrimeiroPacote
+[1.234s] copying /home/pedroportela/Linux/ros/build/PrimeiroPacote/build/lib/PrimeiroPacote/__init__.py -> /home/pedroportela/Linux/ros/install/PrimeiroPacote/lib/python3.8/site-packages/PrimeiroPacote
+[1.235s] byte-compiling /home/pedroportela/Linux/ros/install/PrimeiroPacote/lib/python3.8/site-packages/PrimeiroPacote/__init__.py to __init__.cpython-38.pyc
+[1.235s] running install_data
+[1.235s] creating /home/pedroportela/Linux/ros/install/PrimeiroPacote/share/ament_index
+[1.236s] creating /home/pedroportela/Linux/ros/install/PrimeiroPacote/share/ament_index/resource_index
+[1.236s] creating /home/pedroportela/Linux/ros/install/PrimeiroPacote/share/ament_index/resource_index/packages
+[1.236s] copying resource/PrimeiroPacote -> /home/pedroportela/Linux/ros/install/PrimeiroPacote/share/ament_index/resource_index/packages
+[1.236s] copying package.xml -> /home/pedroportela/Linux/ros/install/PrimeiroPacote/share/PrimeiroPacote
+[1.236s] running install_egg_info
+[1.237s] Copying ../../build/PrimeiroPacote/PrimeiroPacote.egg-info to /home/pedroportela/Linux/ros/install/PrimeiroPacote/lib/python3.8/site-packages/PrimeiroPacote-0.0.0-py3.8.egg-info
+[1.238s] running install_scripts
+[1.253s] writing list of installed files to '/home/pedroportela/Linux/ros/build/PrimeiroPacote/install.log'
+[1.288s] Invoked command in '/home/pedroportela/Linux/ros/scr/PrimeiroPacote' returned '0': PYTHONPATH=/home/pedroportela/Linux/ros/install/PrimeiroPacote/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/PrimeiroPacote build --build-base /home/pedroportela/Linux/ros/build/PrimeiroPacote/build install --prefix /home/pedroportela/Linux/ros/install/PrimeiroPacote --record /home/pedroportela/Linux/ros/build/PrimeiroPacote/install.log --single-version-externally-managed

@@ -1,0 +1,8 @@
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
+/home/pedroportela/Linux/ros/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl
