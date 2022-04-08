@@ -14,7 +14,7 @@ public class CaçaNumero {
             int numSorte = (int)Math.ceil(Math.random()*99);
 
             int i;
-            for(i=0; i<10; i++){
+            for(i=0; i<6; i++){
 
                 System.out.println("---------------------------------------------- \n");
 
