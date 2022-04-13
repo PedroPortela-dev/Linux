@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000224] (action_tutorials_interfaces) JobQueued: {'identifier': 'action_tutorials_interfaces', 'dependencies': OrderedDict()}
+[0.000284] (action_tutorials_interfaces) JobStarted: {'identifier': 'action_tutorials_interfaces'}
+[0.011860] (action_tutorials_interfaces) JobProgress: {'identifier': 'action_tutorials_interfaces', 'progress': 'cmake'}
+[0.012343] (action_tutorials_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/install/action_tutorials_interfaces'], 'cwd': '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/build/action_tutorials_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pedroportela'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{f184b75f-6c82-5ea5-9b3e-3203d66c5f82}'), ('HOME', '/home/pedroportela'), ('OLDPWD', '/home/pedroportela/Linux/ros/scr/action_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu20.04LTS'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pedroportela'), ('NAME', 'LAPTOP-FQL73D5H'), ('WSL_INTEROP', '/run/WSL/355_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pedroportela/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.2.8-hotspot/bin:/mnt/c/Program Files/National Instruments/Shared/OpenVINO/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/log4cxx/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Users/pedro/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/pedro/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/pedro/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/pedro/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/pedro/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('WT_SESSION', '1d955e63-898d-4e15-9e03-c6aabf5b1140'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/build/action_tutorials_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[0.098848] (-) TimerEvent: {}
+[0.199685] (-) TimerEvent: {}
+[0.300360] (-) TimerEvent: {}
+[0.400999] (-) TimerEvent: {}
+[0.501677] (-) TimerEvent: {}
+[0.602356] (-) TimerEvent: {}
+[0.629420] (action_tutorials_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.702488] (-) TimerEvent: {}
+[0.803307] (-) TimerEvent: {}
+[0.904076] (-) TimerEvent: {}
+[1.004697] (-) TimerEvent: {}
+[1.105381] (-) TimerEvent: {}
+[1.167228] (action_tutorials_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.205664] (-) TimerEvent: {}
+[1.306312] (-) TimerEvent: {}
+[1.406991] (-) TimerEvent: {}
+[1.498692] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.507226] (-) TimerEvent: {}
+[1.607766] (-) TimerEvent: {}
+[1.708394] (-) TimerEvent: {}
+[1.781828] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.802210] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.808549] (-) TimerEvent: {}
+[1.909083] (-) TimerEvent: {}
+[2.009644] (-) TimerEvent: {}
+[2.110256] (-) TimerEvent: {}
+[2.157727] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.201667] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.203503] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.210513] (-) TimerEvent: {}
+[2.213809] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.310776] (-) TimerEvent: {}
+[2.411384] (-) TimerEvent: {}
+[2.512048] (-) TimerEvent: {}
+[2.579217] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.580491] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.612196] (-) TimerEvent: {}
+[2.712551] (-) TimerEvent: {}
+[2.746733] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.759294] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.759803] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.789306] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.812799] (-) TimerEvent: {}
+[2.851230] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.851823] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.912935] (-) TimerEvent: {}
+[3.013254] (-) TimerEvent: {}
+[3.113668] (-) TimerEvent: {}
+[3.177876] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[3.213865] (-) TimerEvent: {}
+[3.245318] (action_tutorials_interfaces) StderrLine: {'line': b"Error parsing '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/package.xml':\n"}
+[3.314037] (-) TimerEvent: {}
+[3.414906] (-) TimerEvent: {}
+[3.515498] (-) TimerEvent: {}
+[3.549755] (action_tutorials_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.550125] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 597, in parse_package_string\n'}
+[3.550359] (action_tutorials_interfaces) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[3.550523] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/usr/lib/python3.8/xml/dom/minidom.py", line 1969, in parseString\n'}
+[3.550711] (action_tutorials_interfaces) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[3.550907] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 925, in parseString\n'}
+[3.551059] (action_tutorials_interfaces) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[3.551202] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 223, in parseString\n'}
+[3.551345] (action_tutorials_interfaces) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[3.551487] (action_tutorials_interfaces) StderrLine: {'line': b'xml.parsers.expat.ExpatError: junk after document element: line 20, column 0\n'}
+[3.551629] (action_tutorials_interfaces) StderrLine: {'line': b'\n'}
+[3.551771] (action_tutorials_interfaces) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[3.551912] (action_tutorials_interfaces) StderrLine: {'line': b'\n'}
+[3.552051] (action_tutorials_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.552190] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>\n'}
+[3.552415] (action_tutorials_interfaces) StderrLine: {'line': b'    main()\n'}
+[3.552641] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main\n'}
+[3.552799] (action_tutorials_interfaces) StderrLine: {'line': b'    raise e\n'}
+[3.552946] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main\n'}
+[3.553090] (action_tutorials_interfaces) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[3.553233] (action_tutorials_interfaces) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 599, in parse_package_string\n'}
+[3.553375] (action_tutorials_interfaces) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[3.553571] (action_tutorials_interfaces) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/package.xml':\n"}
+[3.553753] (action_tutorials_interfaces) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[3.553899] (action_tutorials_interfaces) StderrLine: {'line': b'junk after document element: line 20, column 0\n'}
+[3.583605] (action_tutorials_interfaces) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):\n'}
+[3.583837] (action_tutorials_interfaces) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[3.583923] (action_tutorials_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[3.584000] (action_tutorials_interfaces) StderrLine: {'line': b'  /home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/package.xml\n'}
+[3.584075] (action_tutorials_interfaces) StderrLine: {'line': b'  /home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/build/action_tutorials_interfaces/ament_cmake_core/package.cmake)\n'}
+[3.584225] (action_tutorials_interfaces) StderrLine: {'line': b'  returned error code 1\n'}
+[3.584377] (action_tutorials_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.584532] (action_tutorials_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[3.584772] (action_tutorials_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[3.584972] (action_tutorials_interfaces) StderrLine: {'line': b'  CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)\n'}
+[3.585097] (action_tutorials_interfaces) StderrLine: {'line': b'\n'}
+[3.585237] (action_tutorials_interfaces) StderrLine: {'line': b'\n'}
+[3.585651] (action_tutorials_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.585797] (action_tutorials_interfaces) StdoutLine: {'line': b'See also "/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/build/action_tutorials_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[3.588635] (action_tutorials_interfaces) CommandEnded: {'returncode': 1}
+[3.589891] (action_tutorials_interfaces) JobEnded: {'identifier': 'action_tutorials_interfaces', 'rc': 1}
+[3.601524] (-) EventReactorShutdown: {}

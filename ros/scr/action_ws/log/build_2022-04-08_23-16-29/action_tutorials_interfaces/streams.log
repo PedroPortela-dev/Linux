@@ -1,0 +1,60 @@
+[0.018s] Invoking command in '/home/pedroportela/Linux/ros/scr/action_ws/build/action_tutorials_interfaces': /usr/bin/cmake /home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces -DCMAKE_INSTALL_PREFIX=/home/pedroportela/Linux/ros/scr/action_ws/install/action_tutorials_interfaces
+[0.325s] -- The C compiler identification is GNU 9.4.0
+[0.589s] -- The CXX compiler identification is GNU 9.4.0
+[0.688s] -- Check for working C compiler: /usr/bin/cc
+[0.815s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.817s] -- Detecting C compiler ABI info
+[0.944s] -- Detecting C compiler ABI info - done
+[0.957s] -- Detecting C compile features
+[0.958s] -- Detecting C compile features - done
+[0.963s] -- Check for working CXX compiler: /usr/bin/c++
+[1.088s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.089s] -- Detecting CXX compiler ABI info
+[1.222s] -- Detecting CXX compiler ABI info - done
+[1.234s] -- Detecting CXX compile features
+[1.235s] -- Detecting CXX compile features - done
+[1.242s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.273s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.273s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.512s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.560s] Error parsing '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/package.xml':
+[1.796s] Traceback (most recent call last):
+[1.796s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 597, in parse_package_string
+[1.797s]     root = dom.parseString(data)
+[1.797s]   File "/usr/lib/python3.8/xml/dom/minidom.py", line 1969, in parseString
+[1.797s]     return expatbuilder.parseString(string)
+[1.797s]   File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 925, in parseString
+[1.797s]     return builder.parseString(string)
+[1.797s]   File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 223, in parseString
+[1.797s]     parser.Parse(string, True)
+[1.797s] xml.parsers.expat.ExpatError: junk after document element: line 20, column 0
+[1.797s] 
+[1.798s] During handling of the above exception, another exception occurred:
+[1.798s] 
+[1.798s] Traceback (most recent call last):
+[1.798s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[1.798s]     main()
+[1.798s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[1.798s]     raise e
+[1.798s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[1.799s]     package = parse_package_string(
+[1.799s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 599, in parse_package_string
+[1.799s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[1.799s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/package.xml':
+[1.799s] The manifest contains invalid XML:
+[1.799s] junk after document element: line 20, column 0
+[1.821s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.821s]   execute_process(/usr/bin/python3
+[1.822s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.822s]   /home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces/package.xml
+[1.822s]   /home/pedroportela/Linux/ros/scr/action_ws/build/action_tutorials_interfaces/ament_cmake_core/package.cmake)
+[1.822s]   returned error code 1
+[1.823s] Call Stack (most recent call first):
+[1.823s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.823s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.823s]   CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)
+[1.823s] 
+[1.823s] 
+[1.824s] -- Configuring incomplete, errors occurred!
+[1.824s] See also "/home/pedroportela/Linux/ros/scr/action_ws/build/action_tutorials_interfaces/CMakeFiles/CMakeOutput.log".
+[1.826s] Invoked command in '/home/pedroportela/Linux/ros/scr/action_ws/build/action_tutorials_interfaces' returned '1': /usr/bin/cmake /home/pedroportela/Linux/ros/scr/action_ws/src/action_tutorials_interfaces -DCMAKE_INSTALL_PREFIX=/home/pedroportela/Linux/ros/scr/action_ws/install/action_tutorials_interfaces
