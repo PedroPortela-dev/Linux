@@ -1,4 +1,0 @@
-Invoking command in '/home/pedroportela/Linux/ros/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pedroportela/Linux/ros/build/turtlesim -- -j8 -l8
-Invoked command in '/home/pedroportela/Linux/ros/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pedroportela/Linux/ros/build/turtlesim -- -j8 -l8
-Invoking command in '/home/pedroportela/Linux/ros/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pedroportela/Linux/ros/build/turtlesim
-Invoked command in '/home/pedroportela/Linux/ros/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pedroportela/Linux/ros/build/turtlesim
