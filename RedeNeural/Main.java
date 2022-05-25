@@ -1,17 +1,16 @@
-import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     
     public static void main(String[] args) {
 
-        DecimalFormat df = new DecimalFormat("0E0");
+        RedeNeural nn = new RedeNeural(2, 3, 1);
+        List<Double> arr = new ArrayList<>();
+        arr.add(1.);
+        arr.add(2.);
+        nn.feedForward(arr);
         
-        double timer = System.nanoTime();
-
-        while (true) {
-            
-            System.out.println(df.format((System.nanoTime()-timer)/1000000000));
-            timer = System.nanoTime();
-        }
     }
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -10,10 +11,90 @@ public class Matrix {
     int coluna;
     List<Double> matrix = new ArrayList<>();
 
-    float a = 0.000000000000000000000000000000000000000000001f;
-    double b= 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001d;
+    void aleatorio(){
+        matrix.clear();
+        for (int i = 0; i < linha; i++) {
+            List<Double> aleatorio = new ArrayList<>();
+            for (int j = 0; j < coluna; j++) {
+                aleatorio.add(Math.random()*2 - 1);
+            }
+            matrix.addAll(aleatorio);
+        }
+    }
 
     Matrix(int linha, int coluna){
+        this.linha = linha;
+        this.coluna = coluna;
 
+        for (int i = 0; i < linha; i++) {
+            List<Double> aleatorio = new ArrayList<>();
+            for (int j = 0; j < coluna; j++) {
+                aleatorio.add(Math.floor(Math.random()*10));
+            }
+            matrix.addAll(aleatorio);
+        }
+    }
+
+    static Matrix arrayToMatrix(List<Double> arr){
+        Matrix mat = new Matrix(arr.size(), 1);
+
+        for (int i = 0; i < mat.linha; i++) {
+            mat.escrever(i, 0, arr.get(i));
+        }
+
+        return mat;
+    }
+
+    void print(){
+        for (int i = 0; i < linha; i++) {
+            System.out.print(i+": [");
+            for (int j = 0; j < coluna; j++) {
+                if(j != 0) System.out.print(", ");
+                System.out.print(ler(i, j));
+            }
+            System.out.println("]");
+        }
+        System.out.println("------------------------");
+    }
+
+    double ler(int i,int j){
+        int posicaoList = i*coluna+j;
+
+        return matrix.get(posicaoList);
+    }
+
+    void escrever(int i, int j, double valor){
+        int posicaoList = i*coluna+j;
+
+        matrix.set(posicaoList, valor);
+    }
+
+    static Matrix add(Matrix A, Matrix B){
+        Matrix result = new Matrix(A.linha, A.coluna);
+
+        for (int i = 0; i < A.linha; i++) {
+            for (int j = 0; j < B.coluna; j++) {
+                result.escrever(i, j, A.ler(i, j)+B.ler(i, j));
+            }
+        }
+
+        return result;
+    }
+
+    static Matrix multiply(Matrix A, Matrix B){
+        Matrix result = new Matrix(A.linha, B.coluna);
+        double aux;
+
+        for (int i = 0; i < result.linha; i++) {
+            for (int j = 0; j < result.coluna; j++) {
+                aux = 0;
+                for (int j2 = 0; j2 < A.coluna; j2++) {
+                    aux += A.ler(i, j2)*B.ler(j2, j);
+                }
+                result.escrever(i, j, aux);
+            }
+        }
+
+        return result;
     }
 }
