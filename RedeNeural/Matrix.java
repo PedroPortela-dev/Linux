@@ -35,6 +35,17 @@ public class Matrix {
         }
     }
 
+    static Matrix transpose(Matrix A){
+        Matrix result = new Matrix(A.coluna, A.linha);
+        for (int i = 0; i < result.linha; i++) {
+            for (int j = 0; j < result.coluna; j++) {
+                result.escrever(i, j, A.ler(j, i));
+            }
+        }
+
+        return result;
+    }
+
     static Matrix arrayToMatrix(List<Double> arr){
         Matrix mat = new Matrix(arr.size(), 1);
 
@@ -43,6 +54,16 @@ public class Matrix {
         }
 
         return mat;
+    }
+
+    static List<Double> matrixToArray(Matrix mat){
+        List<Double> arr = new ArrayList<>();
+
+        for (int i = 0; i < mat.linha; i++) {
+            arr.add(mat.ler(i, 0));
+        }
+
+        return arr;
     }
 
     void print(){
@@ -81,6 +102,18 @@ public class Matrix {
         return result;
     }
 
+    static Matrix subtract(Matrix A, Matrix B){
+        Matrix result = new Matrix(A.linha, A.coluna);
+
+        for (int i = 0; i < A.linha; i++) {
+            for (int j = 0; j < B.coluna; j++) {
+                result.escrever(i, j, A.ler(i, j)-B.ler(i, j));
+            }
+        }
+
+        return result;
+    }
+
     static Matrix multiply(Matrix A, Matrix B){
         Matrix result = new Matrix(A.linha, B.coluna);
         double aux;
@@ -92,6 +125,30 @@ public class Matrix {
                     aux += A.ler(i, j2)*B.ler(j2, j);
                 }
                 result.escrever(i, j, aux);
+            }
+        }
+
+        return result;
+    }
+
+    static Matrix escalar_multiply(Matrix A, double escalar){
+        Matrix result = new Matrix(A.linha, A.coluna);
+
+        for (int i = 0; i < A.linha; i++) {
+            for (int j = 0; j < A.coluna; j++) {
+                result.escrever(i, j, A.ler(i, j)*escalar);
+            }
+        }
+
+        return result;
+    }
+
+    static Matrix hadmard(Matrix A, Matrix B){
+        Matrix result = new Matrix(A.linha, A.coluna);
+
+        for (int i = 0; i < A.linha; i++) {
+            for (int j = 0; j < B.coluna; j++) {
+                result.escrever(i, j, A.ler(i, j)*B.ler(i, j));
             }
         }
 
