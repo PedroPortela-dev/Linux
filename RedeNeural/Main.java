@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -7,26 +6,35 @@ public class Main {
     
     public static void main(String[] args) {
 
-        Scanner iScanner = new Scanner(System.in);
+        try (Scanner iScanner = new Scanner(System.in)) {
+            RedeNeural nn = new RedeNeural(2, 3, 1);
 
-        RedeNeural nn = new RedeNeural(2, 3, 1);
-        nn.train(input(0), output(0)); 
+            do{
 
-        do{
+                for (int i = 0; i < 10000; i++) {
+                    int index = (int)Math.floor(Math.random()*4);
+                   nn.train(input(index), output(index)); 
+                }
 
-            for (int i = 0; i < 10000; i++) {
-                int index = (int)Math.floor(Math.random()*4);
-               nn.train(input(0), output(0)); 
-            }
+            }while (nn.predict(input(0)).get(0) > 0.04 || nn.predict(input(1)).get(0) < 0.98);
 
-            System.out.println(nn.predict(input(0)).get(0));
-            System.out.println(nn.predict(input(1)).get(0));
-            System.out.println("Pausa");
-            iScanner.next();
+            List<Double> tentativa = new ArrayList<>();
 
+            do {
+                System.out.println("Tentar[1]/[0]");
+                int Tentar = iScanner.nextInt();
 
-        }while (nn.predict(input(0)).get(0) > 0.04 || nn.predict(input(1)).get(0) < 0.98);
-        
+                if (Tentar == 0) {
+                    break;
+                }
+
+                tentativa.clear();
+                tentativa.add(iScanner.nextDouble());
+                tentativa.add(iScanner.nextDouble());
+                
+                System.out.println("A Saida é : "+ nn.predict(tentativa).get(0));
+            } while (true);
+        }
     }
 
     static List<Double> input(int index){
